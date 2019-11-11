@@ -31,7 +31,7 @@ void display()
  glEnd();
 
 
-    int x=0+h,y=r+k;
+    int x=0,y=r;
     double d=5.0/4.0-r;
     writepixel(x,y);
     while(x<y)
@@ -47,14 +47,14 @@ void display()
             y--;
         }
         x++;
-        writepixel(x,y);
-           writepixel(y,x);
-       writepixel(x,-y);
-       writepixel(y,-x);
-       writepixel(-x,y);
-       writepixel(-y,x);
-       writepixel(-x,-y);
-       writepixel(-y,-x);
+        writepixel(x+h,y+k);
+           writepixel(y+h,x+k);
+       writepixel(x+h,-y+k);
+       writepixel(y+h,-x+k);
+       writepixel(-x+h,y+k);
+       writepixel(-y+h,x+k);
+       writepixel(-x+h,-y+k);
+       writepixel(-y+h,-x+k);
 
 
     }
